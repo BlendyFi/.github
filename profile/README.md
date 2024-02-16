@@ -45,10 +45,6 @@ Developed on the Blast Testnet, BlonkFi combines smart contracts, a user-friendl
 - **blnkUSD Contract**: [View on BlastScan](https://testnet.blastscan.io/address/0xB7eBc097C605D7C730284A69DFaF681ba235DF65/contract/168587773/code)
 - **Blonk Reward Token Contract**: [View on BlastScan](https://testnet.blastscan.io/token/0x0C726a45D0B463a3e4F8c5A1B3aBBCFc3F83991f/contract/code)
 
-## Milestone Deliverables 🚩
-
-From smart contract deployment to UI/UX design, BlonkFi systematically approached each development phase with precision.
-
 ## Future Directions 🌟
 
 Expanding Memecoin integrations, enhancing liquidation protocols, and exploring new DeFi solutions to foster a more inclusive ecosystem.
