@@ -34,8 +34,9 @@ Developed on the Blast Testnet, BlonkFi combines smart contracts, a user-friendl
 - **Storage & Communication**: IPFS
 - **Deployment & Oracles**: Spheron, API3
 
-## Known Issues
-- RPC Latency issues sometimes affects the function calls on the Dashboard for Prime Market page (Click on the button repeatedly until the wallet tx confirmation pops up)
+## Known Issues & Solutions
+- [ISSUE] - RPC Latency issues sometimes affects the function calls on the Dashboard
+  - [SOLUTION] - Click on the button repeatedly until the wallet tx confirmation pops up
 
 ## Deployment and Contracts ⛓️
 
