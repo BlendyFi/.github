@@ -32,6 +32,6 @@ Creating a DeFi environment where Memecoin assets contribute to liquidity and yi
 ## Deployment and Contracts ⛓️
 
 - **LendingAndBorrowing Contract**: [View on BlastScan](https://testnet.blastscan.io/address/0x12c9fD197989b22B45A2Cc7618fB3338C729f340/contract/168587773/code)
-- **Self Repaying Vault Contract**: [View on BlastScan](https://testnet.blastscan.io/address/0x60aC65BAf53EE608F3547A94E1E3aA8b05044EeF/contract/168587773/code)
-- **blnkUSD Contract**: [View on BlastScan](https://testnet.blastscan.io/address/0x1a292926d68e2dc42791Cd113F999010A06f0519/contract/168587773/code)
 - **Blonk Reward Token Contract**: [View on BlastScan](https://testnet.blastscan.io/token/0xa491FF301F5fE5d1a86D212b6b5eA544FBA3f798/contract/code)
+- **Self Repaying Vault Contract**: [View on BlastScan](https://testnet.blastscan.io/address/0xD93BC6fdc76c499cf2a962D92775A2Bb38B45081/contract/168587773/code)
+- **blnkUSD Contract**: [View on BlastScan](https://testnet.blastscan.io/address/0x57057943B68Ae9A03063AB0D79997Aea492E3008/contract/168587773/code)
