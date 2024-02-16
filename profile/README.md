@@ -22,29 +22,16 @@ Creating a DeFi environment where Memecoin assets contribute to liquidity and yi
 - **Self-Repaying Loans**: Leveraging yields from deposited collateral.
 - **Native Yield Optimization**: Offering better rates and terms using Blast’s yield mechanisms.
 
-## How It's Made 🛠️
-
-Developed on the Blast Testnet, BlonkFi combines smart contracts, a user-friendly interface, and robust backend systems to provide a seamless DeFi experience.
-
 ## Technology Stack ⚙️
 
-- **Smart Contracts**: Solidity, Hardhat, Ethers.js
-- **Frontend**: React, Next.js, TailwindCSS
+- **Smart Contracts**: Solidity, Hardhat, Ethers.js, Remix, Foundry
+- **Frontend**: React, Next.js, TailwindCSS, wagmi
 - **Backend**: Node.js
-- **Storage & Communication**: IPFS
-- **Deployment & Oracles**: Spheron, API3
-
-## Known Issues & Solutions
-- [ISSUE] - RPC Latency issues sometimes affects the function calls on the Dashboard
-  - [SOLUTION] - Click on the button repeatedly until the wallet tx confirmation pops up
+- **Deployment & Oracles**: Vercel, Pyth
 
 ## Deployment and Contracts ⛓️
 
-- **LendingAndBorrowing Contract**: [View on BlastScan](https://testnet.blastscan.io/address/0xCE11a087Aa960eb33412f40a5E471c72841f9e3F/contract/168587773/code)
-- **Self Repaying Vault Contract**: [View on BlastScan](https://testnet.blastscan.io/address/0x7233E1aD537c8Eb269ced137009cE6E89B61daAc/contract/168587773/code)
-- **blnkUSD Contract**: [View on BlastScan](https://testnet.blastscan.io/address/0xB7eBc097C605D7C730284A69DFaF681ba235DF65/contract/168587773/code)
-- **Blonk Reward Token Contract**: [View on BlastScan](https://testnet.blastscan.io/token/0x0C726a45D0B463a3e4F8c5A1B3aBBCFc3F83991f/contract/code)
-
-## Future Directions 🌟
-
-Expanding Memecoin integrations, enhancing liquidation protocols, and exploring new DeFi solutions to foster a more inclusive ecosystem.
+- **LendingAndBorrowing Contract**: [View on BlastScan](https://testnet.blastscan.io/address/0x12c9fD197989b22B45A2Cc7618fB3338C729f340/contract/168587773/code)
+- **Self Repaying Vault Contract**: [View on BlastScan](https://testnet.blastscan.io/address/0x60aC65BAf53EE608F3547A94E1E3aA8b05044EeF/contract/168587773/code)
+- **blnkUSD Contract**: [View on BlastScan](https://testnet.blastscan.io/address/0x1a292926d68e2dc42791Cd113F999010A06f0519/contract/168587773/code)
+- **Blonk Reward Token Contract**: [View on BlastScan](https://testnet.blastscan.io/token/0xa491FF301F5fE5d1a86D212b6b5eA544FBA3f798/contract/code)
