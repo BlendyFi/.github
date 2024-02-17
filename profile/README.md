@@ -35,3 +35,8 @@ Creating a DeFi environment where Memecoin assets contribute to liquidity and yi
 - **Blonk Reward Token Contract**: [View on BlastScan](https://testnet.blastscan.io/token/0xa491FF301F5fE5d1a86D212b6b5eA544FBA3f798/contract/code)
 - **Self Repaying Vault Contract**: [View on BlastScan](https://testnet.blastscan.io/address/0xD93BC6fdc76c499cf2a962D92775A2Bb38B45081/contract/168587773/code)
 - **blnkUSD Contract**: [View on BlastScan](https://testnet.blastscan.io/address/0x57057943B68Ae9A03063AB0D79997Aea492E3008/contract/168587773/code)
+
+## Known Issues 🛠️
+
+- **MetaMask Failed Login**: On Brave, MetaMask does not work seamlessly. Use Google Chrome or Mozilla Firefox instead.
+- **Supply, Borrow, Repay, Withdraw not working on Dashboard**: This is most likely an oracle issue, you'd have to try again after some time or click on the button multiple times until the transaction confirmation pops up.
