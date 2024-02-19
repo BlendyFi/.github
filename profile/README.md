@@ -27,7 +27,7 @@ Creating a DeFi environment where Memecoin assets contribute to liquidity and yi
 - **Smart Contracts**: Solidity, Hardhat, Ethers.js, Remix, Foundry
 - **Frontend**: React, Next.js, TailwindCSS, wagmi
 - **Backend**: Node.js
-- **Deployment & Oracles**: Vercel, Pyth
+- **Deployment & Oracles**: Vercel, Pyth, API3
 
 ## Deployment and Contracts ⛓️
 
@@ -39,4 +39,4 @@ Creating a DeFi environment where Memecoin assets contribute to liquidity and yi
 ## Known Issues 🛠️
 
 - **MetaMask Failed Login**: On Brave, MetaMask does not work seamlessly. Use Google Chrome or Mozilla Firefox instead.
-- **Supply, Borrow, Repay, Withdraw not working on Dashboard**: This is most likely an oracle issue, you'd have to try again after some time or click on the button multiple times until the transaction confirmation pops up.
+- **Supply, Borrow, Repay, Withdraw not working on Dashboard**: This is most likely an RPC issue, you'd have to try again after some time or click on the button multiple times until the transaction confirmation pops up.
