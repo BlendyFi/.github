@@ -1,42 +1,35 @@
-# BlonkFi – Empowering DeFi with Memecoins
+# Blendy – Empowering MemeFi with Innovative Money Markets
 
 ## Introduction 💡
 
-BlonkFi introduces an innovative DeFi solution, leveraging Memecoins as collateral to optimize the borrowing and lending experience. Our platform utilizes Blast's native yield mechanisms to carve a niche in the DeFi ecosystem for Memecoin holders.
+Blendy is a next-generation money markets protocol built for the rapidly evolving MemeFi ecosystem. By enabling users to utilize volatile memecoins as collateral, Blendy unlocks liquidity without requiring asset liquidation. Our platform integrates cutting-edge risk management modules to handle the unique challenges of this emerging asset class.
 
 ## Project Overview 💬
 
 ### Challenges Addressed ❗️
 
-- **Capital Efficiency**: Enhancing yield from collateral to benefit lenders and borrowers.
-- **Memecoin Utilization**: Enabling Memecoin holders to leverage their assets within DeFi.
-- **Innovative Loan Solutions**: Introducing self-repaying loans with favorable terms through native yields.
+- **Volatility & Risk Management**: Mitigating downside risks through native risk modules, ensuring stability in a high-volatility market.
+- **Liquidity Access**: Empowering memecoin holders to leverage their assets and access liquidity without selling.
+- **Capital Efficiency**: Optimizing yields and borrowing costs through innovative loan mechanisms that self-repay via native yields.
 
 ### Vision 👀
 
-Creating a DeFi environment where Memecoin assets contribute to liquidity and yield opportunities, thus redefining the borrowing and lending landscape.
+We envision a resilient and composable MemeFi ecosystem where the unique strengths of memecoins are fully harnessed. Blendy aims to be the core liquidity infrastructure, enabling users to transform volatile assets into sustainable financial opportunities.
 
 ### Unique Value Proposition 💯
 
-- **Memecoin Collateralization**: A first in DeFi lending and borrowing.
-- **Self-Repaying Loans**: Leveraging yields from deposited collateral.
-- **Native Yield Optimization**: Offering better rates and terms using Blast’s yield mechanisms.
+- **Memecoin Collateralization on Solana**: Pioneering secure and efficient use of memecoins as collateral.
+- **Self-Repaying Loan Solutions**: Automating repayments through yields generated from deposited assets.
+- **Native Risk Management Modules**: Utilizing advanced modules (e.g., Moon Module and Throttle Module) to balance high volatility with market stability.
 
 ## Technology Stack ⚙️
 
-- **Smart Contracts**: Solidity, Hardhat, Ethers.js, Remix, Foundry
-- **Frontend**: React, Next.js, TailwindCSS, wagmi
-- **Backend**: Node.js
-- **Deployment & Oracles**: Vercel, Pyth, API3
-
-## Deployment and Contracts ⛓️
-
-- **LendingAndBorrowing Contract**: [View on BlastScan](https://testnet.blastscan.io/address/0x12c9fD197989b22B45A2Cc7618fB3338C729f340/contract/168587773/code)
-- **Blonk Reward Token Contract**: [View on BlastScan](https://testnet.blastscan.io/token/0xa491FF301F5fE5d1a86D212b6b5eA544FBA3f798/contract/code)
-- **Self Repaying Vault Contract**: [View on BlastScan](https://testnet.blastscan.io/address/0xD93BC6fdc76c499cf2a962D92775A2Bb38B45081/contract/168587773/code)
-- **blnkUSD Contract**: [View on BlastScan](https://testnet.blastscan.io/address/0x57057943B68Ae9A03063AB0D79997Aea492E3008/contract/168587773/code)
+- **Smart Contracts**: Rust, Solana Program Library (SPL), Anchor Framework
+- **Frontend**: React, Next.js, TailwindCSS, with Solana wallet integrations (e.g., Phantom)
+- **Backend & APIs**: Node.js with Solana RPC integrations
+- **Deployment & Oracles**: Vercel, Pyth, Switchboard
 
 ## Known Issues 🛠️
 
-- **MetaMask Failed Login**: On Brave, MetaMask does not work seamlessly. Use Google Chrome or Mozilla Firefox instead.
-- **Supply, Borrow, Repay, Withdraw not working on Dashboard**: This is most likely an RPC issue, you'd have to try again after some time or click on the button multiple times until the transaction confirmation pops up.
+- **Wallet Connection Issues**: Some users may experience connectivity problems with certain wallet providers. We recommend using the Phantom wallet for optimal performance.
+- **Transaction Confirmation Delays**: High RPC loads can sometimes delay transaction confirmations. If you encounter issues, please try again later or check your connection settings.
