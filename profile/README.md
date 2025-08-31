@@ -1,93 +1,87 @@
-# Blendy — Zero-Cost Borrowing Money Markets
+# Blendy — Zero-Cost Borrowing via Yield Streaming
 
-Blendy is a money market that lets users borrow at (near) zero net cost.  
-It routes collateral into yield strategies so the yield offsets borrowing costs. In favorable conditions, loans can self-repay over time.
-
-- Current focus: Solana (Anchor/Rust)
-- Goal: Simple, safe, capital-efficient borrowing with built-in risk controls
-- Angle: Zero/low net cost via collateral yield
+Blendy is a modular liquidity infrastructure layer that enables **zero-cost borrowing** by letting users deposit Liquid Staked Tokens (LSTs) and yield-bearing assets (like xUSD) as collateral. Instead of paying interest out of pocket, borrowers stream a portion of their staking yield directly to lenders. In favorable conditions, loans can self-repay over time.
 
 ---
 
 ## Why Blendy
 
-- Zero-Cost Borrowing: Collateral earns yield that subsidizes borrowing costs.
-- Self-Repaying Loans: Direct yield to interest and/or principal automatically.
-- Risk Controls Built-In:
-  - Downside Guard (hedging) to soften volatility shocks.
-  - Dynamic Throttling (LTV/limits/rates) to stabilize utilization.
-- Simple UX: Deposit → Borrow → Monitor (auto-repayment handles the rest).
+- **Zero-Cost Borrowing**: Collateral yield subsidizes borrowing costs.  
+- **Self-Repaying Loans**: Yield is automatically applied to interest and/or principal.  
+- **Built-In Risk Controls**:  
+  - **Dynamic LTV & rates** based on real-time yields and asset prices.  
+  - **Tiered liquidations** with Dutch auctions.  
+  - **Oracle redundancy** (Pyth + Switchboard with capped adjustments).  
+- **Simple UX**: Deposit → Borrow → Monitor. Yield streaming handles repayments.  
 
-> Note: Zero or negative net cost depends on market yields and parameters. In low-yield or high-volatility regimes, an effective cost may still apply.
+> Note: Zero-cost outcome depends on yields exceeding borrowing rates. In low-yield or high-volatility regimes, an effective cost may apply.
 
 ---
 
 ## How It Works
 
-1. Deposit collateral (supported Solana assets).  
-2. Protocol routes collateral to yield (lending, staking, or LP strategies).  
-3. Borrow stable assets against the collateral.  
-4. Yield offsets your cost; when yield is greater than or equal to cost, your loan trends toward zero.  
-5. Risk modules hedge and throttle to maintain healthy markets.
+1. **Deposit collateral** (LSTs or yield-bearing assets).  
+2. **Protocol validates** asset type, risk parameters, and LTV.  
+3. **Borrow stable assets** (e.g., USDC).  
+4. **Yield streaming**: A portion of staking yield covers interest; surplus flows to borrower.  
+5. **Risk modules** manage LTV, liquidations, and yield calibration.  
 
 ---
 
 ## Core Features
 
-- Interest Subsidy Engine: Matches collateral yield to borrow cost.
-- Self-Repayment Toggle: Opt in to auto-apply yield to interest/principal.
-- Adaptive Risk Modules:
-  - Hedge module: buys protection when risk rises.
-  - Throttle module: adjusts parameters to keep markets balanced.
-- Oracle-Backed Pricing: Pyth / Switchboard on Solana.
-- Programmatic Access: Interfaces for integrators and wallets.
+- **Interest Subsidy Engine**: Collateral yield offsets borrow cost.  
+- **Self-Repayment Toggle**: Auto-apply yield to interest/principal.  
+- **Adaptive Risk Modules**: Dynamic adjustments for asset type and yield.  
+- **Global Yield Calibration**: Weighted LST yield updates only on ±5% shifts, ensuring yield > borrow rate.  
+- **Oracle-Backed Pricing**: Pyth and Switchboard integration with capped adjustments.  
+- **Treasury Sustainability**: Fixed 15% fee on lender interest and borrower surplus yield.  
 
 ---
 
 ## Tech Stack
 
-- Smart Contracts: Rust, Anchor (Solana)  
-- Frontend: React, Next.js, Tailwind  
-- Backend/Indexing: Node.js with RPC/indexers  
-- Infra/Oracles: Pyth, Switchboard; Vercel for web deploys
+- **Smart Contracts**: Rust, Anchor (Solana)  
+- **Frontend**: React, Next.js, Tailwind  
+- **Backend/Indexing**: Node.js with RPC/indexers  
+- **Infra/Oracles**: Pyth, Switchboard  
+- **Automation**: TukTuk Crank (yield distribution)  
+- **Hosting**: Vercel  
 
 ---
 
 ## Getting Started
 
-Prerequisite: a supported Solana wallet (for example, Phantom).
+Prerequisite: A supported Solana wallet (e.g., Phantom).
 
 1. Connect wallet and deposit supported collateral.  
 2. Choose borrowing amount and (optional) self-repayment toggle.  
-3. Confirm transaction; monitor LTV and health.  
-4. Repay anytime or let yield reduce your debt over time.
-
-Networks:
-- Solana: Testnet/Mainnet (see app for current status)
-- Other chains: on the roadmap
+3. Confirm transaction and monitor position.  
+4. Repay anytime, or let yield stream reduce debt.  
 
 ---
 
 ## Risk & Disclaimers
 
-- Collateral can lose value; hedging reduces but does not remove risk.  
-- Zero-cost outcome is not guaranteed; it depends on yield versus borrowing parameters.  
-- Smart contract risk exists despite best practices and audits.
+- Collateral value can drop; hedging/liquidations reduce but do not remove risk.  
+- Zero-cost borrowing depends on yield ≥ borrowing rate.  
+- Smart contract risk exists despite audits and best practices.  
 
 ---
 
 ## Roadmap (High-Level)
 
-- Solana MVP and strategy router  
+- Solana MVP with yield streaming  
 - External audits  
-- Mainnet hardening, more assets/strategies, integrator SDK  
-- Cross-chain expansion (no announcements yet)
+- Mainnet hardening and SDK release  
+- Expanded asset support and strategies  
+- Cross-chain expansion (future roadmap)  
 
 ---
 
 ## Contributing
 
-Pull requests and issues are welcome. Please open a discussion before large changes.
+Pull requests and issues are welcome. Please open a discussion before major changes.
 
 ---
 
