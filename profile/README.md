@@ -1,30 +1,28 @@
-# Blendy — Zero-Cost Borrowing via Yield Streaming
+# Blendy
 
-Blendy is a modular liquidity infrastructure layer that enables **zero-cost borrowing** by letting users deposit Liquid Staked Tokens (LSTs) and yield-bearing assets (like xUSD) as collateral. Instead of paying interest out of pocket, borrowers stream a portion of their staking yield directly to lenders. In favorable conditions, loans can self-repay over time.
+Blendy is a modular liquidity infrastructure layer that enables zero-cost borrowing by letting users deposit Liquid Staked Tokens (LSTs) and yield-bearing assets (like xUSD) as collateral. Instead of paying interest out of pocket, borrowers stream a portion of their staking yield directly to lenders.
 
 ---
 
 ## Why Blendy
 
-- **Zero-Cost Borrowing**: Collateral yield subsidizes borrowing costs.  
+- **Zero-Cost Borrowing**: Collateral yield offsets borrowing costs.  
 - **Self-Repaying Loans**: Yield is automatically applied to interest and/or principal.  
 - **Built-In Risk Controls**:  
-  - **Dynamic LTV & rates** based on real-time yields and asset prices.  
-  - **Tiered liquidations** with Dutch auctions.  
-  - **Oracle redundancy** (Pyth + Switchboard with capped adjustments).  
-- **Simple UX**: Deposit → Borrow → Monitor. Yield streaming handles repayments.  
-
-> Note: Zero-cost outcome depends on yields exceeding borrowing rates. In low-yield or high-volatility regimes, an effective cost may apply.
+  - Dynamic LTV & rates based on real-time yields and asset prices.  
+  - Oracle redundancy (Pyth + Switchboard with capped adjustments).  
+- **Simple UX**: Deposit → Borrow → Monitor. Yield streaming handles repayments.
 
 ---
 
 ## How It Works
 
-1. **Deposit collateral** (LSTs or yield-bearing assets).  
-2. **Protocol validates** asset type, risk parameters, and LTV.  
-3. **Borrow stable assets** (e.g., USDC).  
-4. **Yield streaming**: A portion of staking yield covers interest; surplus flows to borrower.  
-5. **Risk modules** manage LTV, liquidations, and yield calibration.  
+1. Deposit collateral (LSTs or yield-bearing assets).  
+2. Protocol validates asset type, risk parameters, and LTV.  
+3. Borrow correlated assets (e.g., USDC).  
+4. Yield streaming: A portion of staking yield covers interest; surplus flows to borrower.  
+
+Risk modules manage LTV, liquidations, and yield calibration.
 
 ---
 
@@ -41,7 +39,7 @@ Blendy is a modular liquidity infrastructure layer that enables **zero-cost borr
 
 ## Tech Stack
 
-- **Smart Contracts**: Rust, Anchor (Solana)  
+- **Smart Contracts**: Rust, Anchor  
 - **Frontend**: React, Next.js, Tailwind  
 - **Backend/Indexing**: Node.js with RPC/indexers  
 - **Infra/Oracles**: Pyth, Switchboard  
@@ -52,26 +50,23 @@ Blendy is a modular liquidity infrastructure layer that enables **zero-cost borr
 
 ## Getting Started
 
-Prerequisite: A supported Solana wallet (e.g., Phantom).
-
-1. Connect wallet and deposit supported collateral.  
-2. Choose borrowing amount and (optional) self-repayment toggle.  
-3. Confirm transaction and monitor position.  
-4. Repay anytime, or let yield stream reduce debt.  
+1. Prerequisite: A supported web3 wallet (e.g., Phantom).  
+2. Connect wallet and deposit supported collateral.  
+3. Choose borrowing amount.  
+4. Confirm transaction and monitor position.  
+5. Repay anytime, or let yield stream to offset interest.  
 
 ---
 
 ## Risk & Disclaimers
 
-- Collateral value can drop; hedging/liquidations reduce but do not remove risk.  
-- Zero-cost borrowing depends on yield ≥ borrowing rate.  
 - Smart contract risk exists despite audits and best practices.  
 
 ---
 
 ## Roadmap (High-Level)
 
-- Solana MVP with yield streaming  
+- MVP with yield streaming  
 - External audits  
 - Mainnet hardening and SDK release  
 - Expanded asset support and strategies  
